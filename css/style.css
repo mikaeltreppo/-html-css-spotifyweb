@@ -24,8 +24,8 @@ aside {
 
 .principalContainer {
     background-color: blue;
-    width: calc(100vw - 70px);
-    height: calc(100vh - 100px);
+    width: calc(100% - 70px);
+    height: calc(100% - 100px);
     margin-top: 80px;
     overflow-y:auto ;
 
@@ -37,7 +37,7 @@ aside {
     width: calc(100vw - 70px);
     top: 0;
     right: 0;
-    opacity: 0.6;
+    filter:opacity(0.3);
     background-color: darkorange;
     z-index: 9999;
 }
@@ -71,11 +71,11 @@ footer {
     }
 
     .principalContainer {
-        width: calc(100vw - 200px);
+        width: calc(100% - 200px);
     }
 
     .fixedCta {
-        width: calc(100vw - 200px);
+        width: calc(100% - 200px);
     }
 
     li {
