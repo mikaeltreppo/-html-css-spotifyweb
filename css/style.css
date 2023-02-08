@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /*provissorio*/
+    /*provissorio*/
     text-align: center;
 }
 
@@ -27,9 +27,11 @@ aside {
     width: calc(100vw - 70px);
     height: calc(100vh - 100px);
     margin-top: 80px;
+    overflow-y:auto ;
 
 }
-.fixedCta{
+
+.fixedCta {
     height: 80px;
     position: fixed;
     width: calc(100vw - 70px);
@@ -39,9 +41,22 @@ aside {
     background-color: darkorange;
     z-index: 9999;
 }
-.navigationBar{
+
+.navigationBar {
     height: 30px;
     background-color: forestgreen;
+}
+
+li {
+    padding: 20px;
+    list-style: none;
+    width: calc(100% / 2);
+}
+
+.card.song {
+
+    height: 150px;
+    background-color: hotpink;
 }
 
 footer {
@@ -58,18 +73,24 @@ footer {
     .principalContainer {
         width: calc(100vw - 200px);
     }
-    .fixedCta{
+
+    .fixedCta {
         width: calc(100vw - 200px);
+    }
+
+    li {
+        width: calc(100% / 3);
     }
 }
 
 /*desktop 992*/
-@media screen and (min-width:7992px) {
-    
+@media screen and (min-width:992px) {
+    li {
+        width: calc(100% / 6);
+    }
+
 
 }
+
 /*Big desktop 1200*/
-@media screen and (min-width:7992px) {
-    
-
-}
+@media screen and (min-width:1200px) {}
