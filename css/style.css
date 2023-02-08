@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*provissorio*/
-    text-align: center;
+
 }
 
 /*U T I L I T Y*/
@@ -11,9 +10,11 @@
     display: flex;
     flex-wrap: wrap;
 }
-.overflow{
-    overflow-y:auto ;
-    height: calc(100vh - 180px);
+
+.overflow {
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    padding-top: 50px;
 }
 
 /* C S S*/
@@ -29,21 +30,30 @@ aside {
 .principalContainer {
     background-color: blue;
     width: calc(100% - 70px);
-    height: calc(100% - 100px);
-    margin-top: 80px;
-  
-
+    height: calc(100vh - 100px);
 }
 
 .fixedCta {
-    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
     position: fixed;
     width: calc(100vw - 70px);
     top: 0;
     right: 0;
-    filter:opacity(0.3);
-    background-color: darkorange;
+    filter: opacity(0.4);
     z-index: 9999;
+    justify-content: flex-end;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-right: 20px;
 }
 
 .navigationBar {
@@ -66,6 +76,17 @@ li {
 footer {
     background-color: chartreuse;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.invisible{
+    display: none;
+}
+.player{
+    width: 150px;
+    height: 100%;
+    background-color: brown;
 }
 
 /*tablet 768*/
@@ -86,6 +107,9 @@ footer {
     li {
         width: calc(100% / 3);
     }
+   .invisible{
+    display: inline-block;
+   }
 }
 
 /*desktop 992*/
