@@ -11,6 +11,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+.overflow{
+    overflow-y:auto ;
+    height: calc(100vh - 180px);
+}
 
 /* C S S*/
 main {
@@ -27,7 +31,7 @@ aside {
     width: calc(100% - 70px);
     height: calc(100% - 100px);
     margin-top: 80px;
-    overflow-y:auto ;
+  
 
 }
 
@@ -72,6 +76,7 @@ footer {
 
     .principalContainer {
         width: calc(100% - 200px);
+        height: calc(100% - 100px);
     }
 
     .fixedCta {
