@@ -10,10 +10,12 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.f-column{
+    flex-direction: column;
+}
 .overflow {
     overflow-y: auto;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     padding-top: 50px;
 }
 
@@ -25,12 +27,13 @@ main {
 aside {
     background-color: red;
     width: 70px;
+    height: calc(100vh - 80px);
 }
 
 .principalContainer {
     background-color: blue;
     width: calc(100% - 70px);
-    height: calc(100vh - 100px);
+    height: calc(100% - 80px);
 }
 
 .fixedCta {
@@ -61,7 +64,7 @@ aside {
     background-color: forestgreen;
 }
 
-li {
+.principalContainer li {
     padding: 20px;
     list-style: none;
     width: calc(100% / 2);
@@ -75,7 +78,7 @@ li {
 
 footer {
     background-color: chartreuse;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,6 +91,21 @@ footer {
     height: 100%;
     background-color: brown;
 }
+.photoProfile{
+    background-image: url("../img/profile.svg" );
+    background-position: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+
+}
+.sideBar{
+   justify-content: space-between;
+  
+  
+}
 
 /*tablet 768*/
 @media screen and (min-width:768px) {
@@ -97,14 +115,14 @@ footer {
 
     .principalContainer {
         width: calc(100% - 200px);
-        height: calc(100% - 100px);
+        height: calc(100% - 80px);
     }
 
     .fixedCta {
         width: calc(100% - 200px);
     }
 
-    li {
+    .principalContainer li {
         width: calc(100% / 3);
     }
    .invisible{
@@ -114,7 +132,7 @@ footer {
 
 /*desktop 992*/
 @media screen and (min-width:992px) {
-    li {
+    .principalContainer li {
         width: calc(100% / 6);
     }
 
