@@ -214,6 +214,7 @@ footer .name {
     width: 30%;
 }
 
+/*central footer*/
 .timeContainer {
     width: 100%;
     display: flex;
@@ -227,6 +228,7 @@ footer .name {
     height: 10%;
     background-color: white;
     border-radius: 10px;
+    align-self: center;
 
 }
 
@@ -250,6 +252,32 @@ footer .name {
 
 .iconBottom.playBtn {
     font-size: 15px;
+}
+
+.lineLeft {
+    width: 100%;
+    justify-content: right;
+}
+
+/*left footer*/
+.iconBottomLeft {
+    color: white;
+    font-size: 9px;
+}
+
+.lineLeft div {
+    padding-left: 5px;
+}
+
+.player.rigth {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline.left {
+    width: 25%;
+    margin-left: 5px;
 }
 
 /*tablet 768*/
