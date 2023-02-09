@@ -13,7 +13,7 @@
 }
 
 .overflow {
-    overflow-y: auto;
+    overflow-y: scroll;
     height: calc(100vh - 80px);
     padding-top: 50px;
 }
@@ -25,7 +25,7 @@
 /* C S S*/
 main {
     background-color: black;
-
+    overflow: hidden;
 }
 
 .principalContainer {
@@ -33,6 +33,7 @@ main {
     width: calc(100% - 70px);
     height: calc(100% - 80px);
     padding-left: 20px;
+ 
 
 }
 
@@ -87,7 +88,7 @@ main {
 }
 
 .ttl {
-    padding-left: 10px;
+    padding:0px 0px 10px 10px;
     color: white;
     font-size: 15px;
     font-weight: bolder;
@@ -101,8 +102,9 @@ main {
     width: calc(100% / 2);
 }
 
-.card.song {}
-
+.underTitle{
+    padding-left: 10px;
+}
 .description {
  text-align: center}
 
@@ -116,8 +118,16 @@ main {
 .artist {
     color: rgb(122, 124, 129);
     font-size: 9px;
-    padding: 5px 0px;
+    padding: 5px 10px;
+    font-weight: 600;
 }
+.popularArtist .imgPlaylist{
+    border-radius: 50%;
+}
+.playlist{
+    padding: 10px 0px;
+}
+
 
 /***ASIDE****/
 aside ul {}
