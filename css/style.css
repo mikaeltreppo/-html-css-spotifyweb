@@ -33,7 +33,7 @@ main {
     width: calc(100% - 70px);
     height: calc(100% - 80px);
     padding-left: 20px;
- 
+
 
 }
 
@@ -88,7 +88,7 @@ main {
 }
 
 .ttl {
-    padding:0px 0px 10px 10px;
+    padding: 0px 0px 10px 10px;
     color: white;
     font-size: 15px;
     font-weight: bolder;
@@ -102,11 +102,13 @@ main {
     width: calc(100% / 2);
 }
 
-.underTitle{
+.underTitle {
     padding-left: 10px;
 }
+
 .description {
- text-align: center}
+    text-align: center
+}
 
 .name {
     color: white;
@@ -121,10 +123,12 @@ main {
     padding: 5px 10px;
     font-weight: 600;
 }
-.popularArtist .imgPlaylist{
+
+.popularArtist .imgPlaylist {
     border-radius: 50%;
 }
-.playlist{
+
+.playlist {
     padding: 10px 0px;
 }
 
@@ -177,27 +181,77 @@ footer {
 .player {
     height: 100%;
 }
-.imgBottom{
+
+.imgBottom {
     height: 40px;
     margin-right: 10px;
 }
-.descriptionBottom .name, .descriptionBottom .artist{
+
+.descriptionBottom .name,
+.descriptionBottom .artist {
     padding: 0 20px 0 0;
 }
-.leftPart, .rigthPart{
+
+.leftPart,
+.rigthPart {
     justify-content: center;
     align-items: center;
     padding: 0px 0px;
-    
+
 }
-.rigthPart i{
+
+.rigthPart i {
     padding: 5px;
     color: white;
     font-size: 10px;
 }
-footer .name{
+
+footer .name {
     font-size: 10px;
 }
+
+.player {
+    width: 30%;
+}
+
+.timeContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timeline {
+
+    width: 70%;
+    height: 10%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.time {
+    color: white;
+    font-size: 9px;
+    width: 10%;
+}
+
+.up {
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.iconBottom {
+    color: white;
+    padding: 10px;
+    width: calc((100% / 5) - 30px);
+}
+
+.iconBottom.playBtn {
+    font-size: 15px;
+}
+
 /*tablet 768*/
 @media screen and (min-width:768px) {
     aside {
