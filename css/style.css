@@ -117,9 +117,7 @@ text-align: center;
 .btnNav:hover {
     transform: scale(1.2);
 }
-    .btnNav::after{
-    content: "";
- 
+.greenBar{
     height: 2px;
     width: 30%;
     margin: auto;
