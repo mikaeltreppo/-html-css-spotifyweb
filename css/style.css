@@ -93,6 +93,35 @@ main {
 /*PLAYLIST*/
 .imgPlaylist {
     width: 100%;
+    position: relative;
+}
+
+.card.song {
+  
+    width: 100%;
+    height: 100%;
+}
+.relativeImg{
+position: relative;
+}
+.playImg{
+    position: absolute;
+    left: 50%;
+     top:50%;
+     transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+.card.song:hover img {
+    
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+}
+.card.song:hover .playImg{
+    display: block;
 }
 
 .ttl {
@@ -222,10 +251,11 @@ aside img {
     background-image: url("../img/profile.svg");
     background-position: center;
 }
-.profileWrite{
-color: white;
-font-weight: 800;
-padding-left: 10px;
+
+.profileWrite {
+    color: white;
+    font-weight: 800;
+    padding-left: 10px;
 }
 
 /****FOOTER*****/
