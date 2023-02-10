@@ -4,9 +4,14 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     list-style: none;
+ 
 }
 
 /*U T I L I T Y*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -58,8 +63,13 @@ main {
     z-index: 9999;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.4);
-}
+    padding-right: 20px;
 
+}
+.button:hover {
+    transform: scale(1.2);
+    
+}
 .button {
     display: inline-block;
     padding: 5px 15px;
@@ -85,11 +95,13 @@ main {
 
 .btnNav {
     font-size: 10px;
-    padding: 5px 5px;
+    padding: 5px 8px;
     color: rgb(122, 124, 129);
     font-weight: 600;
 }
-
+.btnNav:hover{
+    transform: scale(1.2);
+}
 /*PLAYLIST*/
 .imgPlaylist {
     width: 100%;
@@ -171,6 +183,10 @@ position: relative;
 
 
 /***ASIDE****/
+.hover:hover{
+    transform: scale(1.1);
+    color: antiquewhite;
+}
 aside {
     width: 70px;
     height: calc(100vh - 80px);
