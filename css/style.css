@@ -233,9 +233,10 @@ aside {
 }
 
 .iconAside {
+  
     width: 30px;
     margin: 5px 0px; 
-     border-left: 2px solid transparent;
+  
 }
 
 .iconAside span {
@@ -260,7 +261,9 @@ aside img {
 .yourSong {
     overflow: hidden;
 }
-
+.algn{
+    padding-left: 10px;
+}
 .list.play {
     overflow-y: auto;
 
