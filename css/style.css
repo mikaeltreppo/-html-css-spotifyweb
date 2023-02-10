@@ -4,14 +4,15 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     list-style: none;
- 
+
 }
 
 /*U T I L I T Y*/
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -66,10 +67,12 @@ main {
     padding-right: 20px;
 
 }
+
 .button:hover {
     transform: scale(1.2);
-    
+
 }
+
 .button {
     display: inline-block;
     padding: 5px 15px;
@@ -99,9 +102,11 @@ main {
     color: rgb(122, 124, 129);
     font-weight: 600;
 }
-.btnNav:hover{
+
+.btnNav:hover {
     transform: scale(1.2);
 }
+
 /*PLAYLIST*/
 .imgPlaylist {
     width: 100%;
@@ -109,30 +114,33 @@ main {
 }
 
 .card.song {
-  
+
     width: 100%;
     height: 100%;
 }
-.relativeImg{
-position: relative;
+
+.relativeImg {
+    position: relative;
 }
-.playImg{
+
+.playImg {
     position: absolute;
     left: 50%;
-     top:50%;
-     transform: translate(-50%, -50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 30px;
     display: none;
 }
 
 .card.song:hover img {
-    
+
     align-items: center;
     justify-content: center;
     opacity: 0.3;
 }
-.card.song:hover .playImg{
+
+.card.song:hover .playImg {
     display: block;
 }
 
@@ -183,10 +191,16 @@ position: relative;
 
 
 /***ASIDE****/
-.hover:hover{
+.hover:hover {
     transform: scale(1.1);
     color: antiquewhite;
 }
+
+.algn:hover {
+    border-left: 2px solid rgb(56, 171, 56);
+    padding-left: 5px;
+}
+
 aside {
     width: 70px;
     height: calc(100vh - 80px);
@@ -331,17 +345,72 @@ footer .name {
 .timeline {
 
     width: 70%;
-    height: 10%;
+    height: 30%;
     background-color: white;
     border-radius: 10px;
     align-self: center;
 
 }
 
+.timeline.short {
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(126, 141, 126);
+}
+
+.circleTimeline {
+
+    position: absolute;
+    background-color: chartreuse;
+    height: 10px;
+    width: 10px;
+    right: 0;
+    top: 0px;
+    transform: translate(0px, -3px);
+    border-radius: 50%;
+    display: none;
+}
+
+.timeContainer:hover .circleTimeline {
+    display: block;
+}
+
+.timeContainer:hover .timeline.timeline.short {
+    background-color: darkgreen;
+}
+
+.lineLeft:hover .timeline.timeline.short.volume {
+    background-color: darkgreen;
+}
+
+.timeline.short.volume {
+    margin-left: -5px;
+}
+
 .time {
     color: white;
     font-size: 9px;
     width: 10%;
+}
+
+.circleVolumeTimeline {
+    position: absolute;
+    background-color: chartreuse;
+    height: 10px;
+    width: 10px;
+    right: 0;
+    top: 0px;
+    border-radius: 50%;
+    transform: translate(0px, -3px);
+    display: none;
+
+}
+
+.lineLeft:hover .circleVolumeTimeline {
+    display: block;
 }
 
 .up {
@@ -363,6 +432,7 @@ footer .name {
 .lineLeft {
     width: 100%;
     justify-content: right;
+    position: relative;
 }
 
 /*left footer*/
